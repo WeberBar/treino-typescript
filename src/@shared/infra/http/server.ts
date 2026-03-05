@@ -1,5 +1,6 @@
 
 import express from 'express';
+import '../typeorm';
 import { CreateUserController } from '../../../modules/users/controllers/CreateUserController';
 import { ListUsersController } from '../../../modules/users/controllers/ListUsersController';
 import { UsersRepositoryInMemory } from '../../../modules/users/repositories/UsersRepositoryInMemory';
@@ -15,6 +16,6 @@ app.get('/users', (req, res) => listUsersController.handle(req, res));
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(3333, () => {
+  console.log('Server is running on port 3333');
 }   );

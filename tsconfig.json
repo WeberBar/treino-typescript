@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2020",
+    "target": "es2017",
     "module": "commonjs",
     "lib": ["es6"],
     "allowJs": true,
@@ -9,12 +9,14 @@
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "experimentalDecorators": true, /* Habilita o uso de @Decorators */
+    "emitDecoratorMetadata": true,  /* Permite que o TypeORM leia os tipos das propriedades */
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
       "@modules/*": ["src/modules/*"],
-      "@shared/*": ["src/shared/*"]
+      "@shared/*": ["src/@shared/*"]
     }
   },
   "include": ["src/**/*"]

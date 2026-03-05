@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  api_saas_db:
+    image: postgres
+    container_name: api_saas_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: saas_picode
+    ports:
+      - "5432:5432"
+    
